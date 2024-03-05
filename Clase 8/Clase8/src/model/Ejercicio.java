@@ -72,7 +72,7 @@ public class Ejercicio {
         String nombre;
         String continuar = "SI";
 
-        while (continuar.equals("SI")) {
+        while (!continuar.equals("NO")) {
             System.out.println("Digame un nombre");
             nombre = sc.nextLine();
             System.out.println("El nombre digitado fue " + nombre + " ¿Quiere mencionar a otra persona? \nSI\nNO");
