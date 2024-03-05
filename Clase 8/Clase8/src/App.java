@@ -10,10 +10,11 @@ public class App {
         Scanner scan = new Scanner(System.in);
         int opcion;
         int opc;
+        int numeroNatural = 0;
         boolean indicador = true;
         while (indicador) {
             System.out.println(
-                    "Escoja el ejercicio del examen\n1-Ejercicio 1\n2-Ejercicio 2\n3-Ejercicio 3\n4-Ejercicio 4");
+                    "Escoja el ejercicio del examen\n1-Ejercicio 1\n2-Ejercicio 2\n3-Ejercicio 3\n4-Ejercicio 4\n5-Ejercicio 5\n6-Ejercicio 6");
             opcion = scan.nextInt();
             switch (opcion) {
                 case 1:
@@ -36,6 +37,15 @@ public class App {
                         System.out.println("PASO EL CURSO, FELICIDADES DE NUEVO");
                     }
                     break;
+                case 5:
+                    System.out.println("Digite un numero positivo");
+                    numeroNatural = scan.nextInt();
+                    ejercicio.calcularCuadradosNaturales(numeroNatural);
+                    break;
+                case 6:
+                    ejercicio.bonoDesempenioEmpleado();
+                    break;
+
                 default:
                     break;
             }

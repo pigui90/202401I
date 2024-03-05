@@ -1,5 +1,6 @@
 package model;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class Ejercicio {
@@ -115,6 +116,43 @@ public class Ejercicio {
             return Boolean.TRUE;
         }
         return Boolean.FALSE;
+    }
+
+    public void calcularCuadradosNaturales(int numero){
+        
+        for (int i = 1; i <= numero; i++) {
+            System.out.println("El cuadrado de " + i + " es: " + i*i);
+        }
+    }
+
+    public void bonoDesempenioEmpleado(){
+        Scanner scanner = new Scanner(System.in);
+        Date fechaIngreso = new Date();
+        double salarioTotal;
+        int porcDesemp ;
+        int aniosTrabajados;
+
+        System.out.println("Digite su salario Total");
+        salarioTotal = scanner.nextDouble();
+        System.out.println("Digite su porcentaje evaluacion");
+        porcDesemp = scanner.nextInt();
+        System.out.println("Digite su años trabajados ");
+        aniosTrabajados = scanner.nextInt();
+
+        if(salarioTotal >= 100000 && porcDesemp > 80 ){
+            salarioTotal = salarioTotal + (5000 * aniosTrabajados);
+            System.out.println("Su salario Total es ahora " + salarioTotal);
+        }else{
+            if(salarioTotal < 100000 || fechaIngreso.getYear() < 2022){
+                salarioTotal = salarioTotal + 15000;
+                System.out.println("Su salario Total es ahora " + salarioTotal);
+            }else{
+                if(porcDesemp < 80){
+                    System.out.println("no tiene bono");
+                }
+            }
+        }
+        
     }
 
 
