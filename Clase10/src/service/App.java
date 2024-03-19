@@ -18,8 +18,8 @@ public class App {
         String descripcion;
         int opcion = 0;
         do {
-            String menu = "1. Ingresar Transportes\n2. Salir\nIndique una opcion:";
-            System.out.println(menu);
+            String menu = "1. Ingresar Transportes\n2. Salir\nIndique una opcion: ";
+            System.out.print(menu);
             opcion = scan.nextInt();
 
             switch (opcion) {
