@@ -43,7 +43,7 @@ public class App {
 
                     transporte = new Transporte(placa, tarifa, tipoTarifa, tipoTransporte, capacidad);
 
-                    transporte.mostrarDatos();
+                    System.out.println(transporte.mostrarDatos());
                     System.out.println("La ganancia maxima es: " + transporte.calcularGananciaMaxima());
                     break;
                 case 2:
