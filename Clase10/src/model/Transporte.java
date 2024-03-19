@@ -4,18 +4,18 @@ public class Transporte {
     private String placa;
     private int tarifa;
     private TipoTarifa tipoTarifa;
-    private TipoTransporte tipoTrasnporte;
+    private TipoTransporte tipoTransporte;
     private int capacidad;
 
     public Transporte() {
     }
 
-    public Transporte(String placa, int tarifa, TipoTarifa tipoTarifa, TipoTransporte tipoTrasnporte,
+    public Transporte(String placa, int tarifa, TipoTarifa tipoTarifa, TipoTransporte tipoTransporte,
             int capacidad) {
         this.placa = placa;
         this.tarifa = tarifa;
         this.tipoTarifa = tipoTarifa;
-        this.tipoTrasnporte = tipoTrasnporte;
+        this.tipoTransporte = tipoTransporte;
         this.capacidad = capacidad;
     }
 
@@ -43,12 +43,12 @@ public class Transporte {
         this.tipoTarifa = tipoTarifa;
     }
 
-    public TipoTransporte getTipoTrasnporte() {
-        return tipoTrasnporte;
+    public TipoTransporte getTipoTransporte() {
+        return tipoTransporte;
     }
 
-    public void setTipoTrasnporte(TipoTransporte tipoTrasnporte) {
-        this.tipoTrasnporte = tipoTrasnporte;
+    public void setTipoTrasnporte(TipoTransporte tipoTransporte) {
+        this.tipoTransporte = tipoTransporte;
     }
 
     public int getCapacidad() {
@@ -61,7 +61,7 @@ public class Transporte {
 
     public String mostrarDatos() {
         return "La placa es: " + getPlaca() + "\nEl tipo de Tarifa es: " + getTipoTarifa().getDescripcion()
-                + "\nLa tarifa es: " + getTarifa() + "\nEl tipo de Transporte es: " + getTipoTrasnporte().getDescripcion()
+                + "\nLa tarifa es: " + getTarifa() + "\nEl tipo de Transporte es: " + getTipoTransporte().getDescripcion()
                 + "\nLa capacidad es: " + getCapacidad();
     }
 

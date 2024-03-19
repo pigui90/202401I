@@ -40,7 +40,6 @@ public class App {
 
                     System.out.println("Digite la capacidad del transporte");
                     capacidad = scan.nextInt();
-
                     transporte = new Transporte(placa, tarifa, tipoTarifa, tipoTransporte, capacidad);
 
                     System.out.println(transporte.mostrarDatos());
@@ -54,7 +53,7 @@ public class App {
             }
 
         } while (opcion != 2);
-
+        scan.close();
     }
 
 }
