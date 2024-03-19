@@ -25,17 +25,17 @@ public class App {
             switch (opcion) {
                 case 1:
                     System.out.println("Digite su numero de placa");
-                    placa = scan.nextLine();
+                    placa = scan.next();
 
                     System.out.println("Digite la tarifa del transporte");
                     tarifa = scan.nextInt();
 
                     System.out.println("Digite el Tipo de Tarifa");
-                    descripcion = scan.nextLine();
+                    descripcion = scan.next();
                     tipoTarifa = new TipoTarifa(descripcion);
 
                     System.out.println("Digite el Tipo de Transporte");
-                    descripcion = scan.nextLine();
+                    descripcion = scan.next();
                     tipoTransporte = new TipoTransporte(descripcion);
 
                     System.out.println("Digite la capacidad del transporte");
