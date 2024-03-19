@@ -1,0 +1,72 @@
+package model;
+
+public class Transporte {
+    private String placa;
+    private int tarifa;
+    private TipoTarifa tipoTarifa;
+    private TipoTransporte tipoTrasnporte;
+    private int capacidad;
+
+    public Transporte() {
+    }
+
+    public Transporte(String placa, int tarifa, TipoTarifa tipoTarifa, TipoTransporte tipoTrasnporte,
+            int capacidad) {
+        this.placa = placa;
+        this.tarifa = tarifa;
+        this.tipoTarifa = tipoTarifa;
+        this.tipoTrasnporte = tipoTrasnporte;
+        this.capacidad = capacidad;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public int getTarifa() {
+        return tarifa;
+    }
+
+    public void setTarifa(int tarifa) {
+        this.tarifa = tarifa;
+    }
+
+    public TipoTarifa getTipoTarifa() {
+        return tipoTarifa;
+    }
+
+    public void setTipoTarifa(TipoTarifa tipoTarifa) {
+        this.tipoTarifa = tipoTarifa;
+    }
+
+    public TipoTransporte getTipoTrasnporte() {
+        return tipoTrasnporte;
+    }
+
+    public void setTipoTrasnporte(TipoTransporte tipoTrasnporte) {
+        this.tipoTrasnporte = tipoTrasnporte;
+    }
+
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    public String mostrarDatos() {
+        return "La placa es: " + getPlaca() + "\nEl tipo de Tarifa es: " + getTipoTarifa().getDescripcion()
+                + "\nLa tarifa es: " + getTarifa() + "\nEl tipo de Transporte es: " + getTipoTrasnporte().getDescripcion()
+                + "\nLa capacidad es: " + getCapacidad();
+    }
+
+    public int calcularGananciaMaxima(){
+        return getTarifa() * getCapacidad();
+    }
+
+}
